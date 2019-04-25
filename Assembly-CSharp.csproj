@@ -64,7 +64,6 @@
     <Compile Include="Assets\Scripts\BoxSpawner.cs" />
     <Compile Include="Assets\Scripts\CameraControler.cs" />
     <Compile Include="Assets\Scripts\PlayerControler.cs" />
-    <Compile Include="Assets\Scripts\ScaleSpace.cs" />
     <Compile Include="Assets\Scripts\Utility.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/splkm/OneDrive/Visual Studio Project/SToR3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

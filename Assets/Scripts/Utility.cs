@@ -68,12 +68,25 @@ public class Pair<T1, T2> {
         this.first = first;
         this.second = second;
     }
+    
+    public Pair() {
+        this.first = default;
+        this.second = default;
+    }
 }
 
 public static class Formulas {
     //public static UInt64 c { get; } = 299792458;
     public static float c { get; } = 29.9792458f / 2;
 
+    public static Pair<float, float> Scale(Pair<float, float> scale) {
+        float scaleX = K(new Vector2(PlayerProperties.v.x, 0f))
+            * scale.first,
+            scaleY = K(new Vector2(0f, PlayerProperties.v.y))
+            * scale.second;
+
+        return new Pair<float, float>(scaleX, scaleY);
+    }
     public static float K(Vector2 v) {
         return (float)Math.Sqrt(1 - v.sqrMagnitude / (c * c));
     }
