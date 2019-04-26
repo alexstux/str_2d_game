@@ -78,18 +78,4 @@ public class PlayerControler : MonoBehaviour {
                 + Vector2.right * axisHorizontal;
         }
     }
-
-    void OnGUI() {
-        GUI.Label(new Rect(0, 0, 200, 20),
-            "r = " + PlayerProperties.r.ToString());
-        GUI.Label(new Rect(0, 15, 200, 20),
-            "v = " + PlayerProperties.v.ToString() 
-            + "(" + PlayerProperties.v.magnitude / Formulas.c + "c)");
-        GUI.Label(new Rect(0, 30, 200, 20),
-            "a = " + PlayerProperties.a.ToString());
-        GUI.Label(new Rect(0, 45, 200, 20),
-            "t = " + Time.time.ToString());
-        GUI.Label(new Rect(0, 60, 200, 20), 
-            "t' = " + PlayerProperties.time.ToString() + " (reality)");
-    }
 }
